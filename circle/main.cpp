@@ -5,11 +5,12 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    double r,Area;
+    double r;
     cout << "请输入圆的面积 r ：  "; 
     cin >> r ;
-    Area = area(r);
-    cout <<"圆的面积是："<<Area<<endl;
+    Circle c(r);
+    cout <<"圆的面积是："<<c.Area()<<endl;
     system("PAUSE");
     return EXIT_SUCCESS;
 }
+

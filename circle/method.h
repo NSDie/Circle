@@ -1,8 +1,12 @@
-#include <iostream>
-#define PI 3.14
-using namespace std;
-
-double area(double r)
+#ifndef METHOD_H
+#define METHOD_H
+class Circle
 {
- return r*r*PI;
-}
+private:
+    double r;//半径
+public:
+    Circle();//构造函数
+    Circle(double R);//构造函数
+    double Area();//求面积函数
+};
+#endif
